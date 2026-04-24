@@ -9,7 +9,7 @@ const WhyChooseUs = () => {
   };
 
   return (
-    <section className="w-full min-h-screen py-24 px-4 sm:px-6" style={{ backgroundColor: '#001b3c', color: 'white' }}>
+    <section className="w-full  py-12 px-4 sm:px-6" style={{ backgroundColor: '#001b3c', color: 'white' }}>
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center">
           {/* Left Content */}

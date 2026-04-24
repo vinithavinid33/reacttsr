@@ -29,7 +29,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-surface">
+    <section id="contact" className="pt-[20] py-24 bg-surface">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Info */}

@@ -9,7 +9,7 @@ const AboutPreview = () => {
               <div className="lg:col-span-7 relative">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-4 pt-12">
-                    <img className="w-full aspect-4/5 object-cover rounded-sm shadow-2xl" data-alt="close-up of a professional construction engineer in a white hard hat reviewing technical blueprints on a sunny site" src="images/1000148548-1.jpg" />
+                    <img className="w-full aspect-4/5 object-cover rounded-sm shadow-2xl" data-alt="close-up of a professional construction engineer in a white hard hat reviewing technical blueprints on a sunny site" src="https://img.freepik.com/premium-photo/home-with-large-front-door-large-window-with-view-outside_1103290-69406.jpg" />
                     <div className="bg-primary p-8 text-white rounded-sm">
                       <p className="text-4xl font-headline font-black text-on-tertiary-container">15+</p>
                       <p className="text-sm font-label uppercase tracking-widest opacity-80">Years of Experience
@@ -17,8 +17,8 @@ const AboutPreview = () => {
                     </div>
                   </div>
                   <div className="space-y-4">
-                    <img className="w-full aspect-4/5 object-cover rounded-sm shadow-2xl" data-alt="architectural low angle shot of a sleek modern apartment building facade with glass balconies under a bright sky" src="images/1000148560-1.jpg" />
-                    <img className="w-full aspect-square object-cover rounded-sm shadow-2xl" data-alt="construction site interior showing heavy industrial wooden scaffolding and concrete structural beams in sunlight" src="images/1000148547.jpg" />
+                    <img className="w-full aspect-4/5 object-cover rounded-sm shadow-2xl" data-alt="architectural low angle shot of a sleek modern apartment building facade with glass balconies under a bright sky" src="https://img.freepik.com/premium-photo/house-with-garage-door-that-has-large-front-door_1258102-2393.jpg" />
+                    <img className="w-full aspect-square object-cover rounded-sm shadow-2xl" data-alt="construction site interior showing heavy industrial wooden scaffolding and concrete structural beams in sunlight" src="https://img.freepik.com/premium-photo/interior-bed-room-kitchen-lobby-front-elevation-architecture-design_1022782-350.jpg" />
                   </div>
                 </div>
               </div>
@@ -49,7 +49,7 @@ const AboutPreview = () => {
                     Expert Engineering Team
                   </li>
                 </ul>
-                <a href="about.html">
+                <a href="/about">
                   <button className="bg-surface-container-high text-primary font-headline font-bold px-8 py-4 rounded-sm hover:bg-primary hover:text-white transition-all duration-300">
                     Learn More About Us
                   </button>

@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+ 
+
 const ProjectsGallery = () => {
+  const [showMore, setShowMore] = useState(false);
+
   return (
-    <section className="w-full min-h-screen py-24 bg-surface px-4 sm:px-6">
+    <section className="w-full min-h-screen py-8 bg-surface">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
@@ -16,8 +20,9 @@ const ProjectsGallery = () => {
             </h2>
           </div>
           <Link to="/projects">
-            <button className="text-primary font-headline font-bold flex items-center gap-2 group border-b-2 border-on-tertiary-container pb-1 whitespace-nowrap">
-              View Full Gallery
+            <button  onClick={() => setShowMore(!showMore)} className="text-primary font-headline font-bold flex items-center gap-2 group border-b-2 border-on-tertiary-container pb-1 whitespace-nowrap">
+             
+                {showMore ? "Back" : "View Full Gallery"}
               <span className="material-symbols-outlined group-hover:translate-x-2 transition-transform">
                 arrow_right_alt
               </span>
@@ -31,7 +36,7 @@ const ProjectsGallery = () => {
           <div className="md:col-span-2 md:row-span-2 relative group overflow-hidden rounded-sm min-h-75 md:min-h-auto">
             <img
               className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              src="/images/1000148559.jpg"
+              src="/images/ModernBuilding.png"
               alt="Grand Emerald Villa"
             />
             <div className="absolute inset-0 bg-linear-to-t from-primary/90 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-8 flex flex-col justify-end">
@@ -77,6 +82,34 @@ const ProjectsGallery = () => {
             </div>
           </div>
         </div>
+
+
+
+        {/* 🔥 Hidden Projects */}
+        {showMore && (
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-6">
+
+            <div className="relative overflow-hidden rounded-sm">
+              <img  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+               src="/images/WhatsApp Image 2026-04-15 at 12.15.02 PM (2).jpeg"  />
+            </div>
+
+            <div className="relative overflow-hidden rounded-sm">
+              <img src="/images/WhatsApp Image 2026-04-15 at 12.15.02 PM (15).jpeg" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700w-full h-60 object-cov" />
+            </div>
+
+            <div className="relative overflow-hidden rounded-sm">
+              <img src="/images/WhatsApp Image 2026-04-15 at 12.15.01 PM (24).jpeg" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            </div>
+
+            <div className="relative overflow-hidden rounded-sm">
+              <img src="/images/WhatsApp Image 2026-04-15 at 12.15.02 PM (5).jpeg" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+            </div>
+
+          </div>
+        )}
+
+      
       </div>
     </section>
   );

@@ -9,7 +9,7 @@ import ContactForm from '../components/ContactForm';
 
 const Home = () => {
   return (
-    <div className="bg-surface font-body text-on-surface">
+    <div className="bg-surface font-body text-on-surface space-y-16 md:space-y-20">
       <HeroSection />
       <AboutPreview />
       <ServicesPreview />
