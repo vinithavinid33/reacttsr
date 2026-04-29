@@ -1,6 +1,9 @@
-import React from "react";
+import { useState } from "react";
 
 const ServicesPreview = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+
+ 
   const services = [
     {
       icon: "home",
@@ -40,10 +43,11 @@ const ServicesPreview = () => {
     },
   ];
 
+  
   return (
-    <section className="py-20  bg-surface-container-low">
+    <section className="py-20 bg-surface-container-low">
       <div className="max-w-7xl mx-auto px-4 lg:px-6">
-        
+
         {/* Header */}
         <div className="text-center mb-24">
           <h3 className="text-on-tertiary-container font-bold tracking-[0.2em] uppercase text-sm">
@@ -54,13 +58,20 @@ const ServicesPreview = () => {
             Our Core Services
           </h2>
 
-          <div className=" w-24 h-1.5 bg-on-tertiary-container mx-auto"></div>
+          <div className="w-24 h-1.5 bg-on-tertiary-container mx-auto"></div>
         </div>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-6 sm:px-8">
           {services.map((service, index) => (
-            <ServiceCard key={index} service={service} />
+            <ServiceCard
+              key={index}
+              service={service}
+              isActive={activeIndex === index}
+              onClick={() =>
+                setActiveIndex(activeIndex === index ? null : index)
+              }
+            />
           ))}
         </div>
 

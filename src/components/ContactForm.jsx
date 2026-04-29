@@ -64,7 +64,7 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h6 className="font-headline font-bold text-primary mb-1">Phone Number</h6>
-                  <p className="text-on-surface-variant">+91 9003440908</p>
+                  <p className="text-on-surface-variant">+91 9003440908 , +91 96554 16090</p>
                 </div>
               </div>
 

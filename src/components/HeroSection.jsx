@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+ 
 
 const HeroSection = () => {
   return (
@@ -28,9 +29,11 @@ const HeroSection = () => {
             <a href="#contact"><button className="bg-on-tertiary-container text-white px-8 py-4 rounded-sm font-headline font-bold text-base hover:shadow-xl hover:shadow-on-tertiary-container/20 transition-all flex items-center justify-center gap-2">
               Get Free Quote <span className="material-symbols-outlined text-lg">arrow_forward</span>
             </button></a>
+             
             <button className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-sm font-headline font-bold text-base hover:bg-white/20 transition-all">
-              <a href="projects.html" className="text-white">View Projects</a>
+              View Projects 
             </button>
+    
           </div>
         </div>
       </div>
